@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Northwind Analytics — Dashboards that actually decide</title>
+    <meta
+      name="description"
+      content="Northwind turns your raw numbers into clear next steps. Start your 14-day free trial — no credit card games."
+    />
+
+    <!-- ================================================================= -->
+    <!--  adfit snippet                                                    -->
+    <!--                                                                   -->
+    <!--  Replace the whole block below with the code you copy from the    -->
+    <!--  adfit wizard (Sites -> New site -> step 2 "Install the snippet", -->
+    <!--  platform "Static HTML"). It already points at your local dev     -->
+    <!--  server (http://localhost:3000) and carries your site token.      -->
+    <!--                                                                   -->
+    <!--  The placeholder below only shows the shape — it will NOT connect -->
+    <!--  until you paste your real token (REPLACE_WITH_YOUR_SITE_TOKEN).  -->
+    <!-- ================================================================= -->
+    <link rel="preconnect" href="http://localhost:3000" crossorigin />
+    <script
+      src="http://localhost:3000/s/st_jI1LKvz6pW_YoVnf3Bz1VQUZAMSosY4M.js"
+      data-site="st_jI1LKvz6pW_YoVnf3Bz1VQUZAMSosY4M"
+      data-cfasync="false"
+      data-no-defer="1"
+      data-no-optimize="1"
+      data-no-minify="1"
+      class="no-defer no-optimize"
+      async
+    ></script>
+    <!-- end adfit snippet -->
+
+    <style>
+      :root {
+        --bg: #0b0d12;
+        --panel: #12151c;
+        --ink: #e8ebf0;
+        --muted: #9aa3b2;
+        --brand: #6366f1;
+        --brand-ink: #ffffff;
+        --line: #232838;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .logo {
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        font-size: 1.15rem;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 22px;
+        font-size: 0.95rem;
+      }
+      nav a:hover {
+        color: var(--ink);
+      }
+
+      .hero {
+        padding: 88px 0 64px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: clamp(2.2rem, 5vw, 3.4rem);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        margin: 0 0 18px;
+      }
+      .hero h2 {
+        font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+        font-weight: 400;
+        color: var(--muted);
+        max-width: 640px;
+        margin: 0 auto 32px;
+      }
+      .cta {
+        display: inline-block;
+        background: var(--brand);
+        color: var(--brand-ink);
+        padding: 14px 28px;
+        border-radius: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      .cta:hover {
+        filter: brightness(1.08);
+      }
+      .cta.secondary {
+        background: transparent;
+        color: var(--ink);
+        border: 1px solid var(--line);
+        margin-left: 12px;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 24px 0 72px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 24px;
+      }
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .signup {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 40px;
+        margin-bottom: 72px;
+      }
+      .signup h2 {
+        margin: 0 0 6px;
+        font-size: 1.6rem;
+        letter-spacing: -0.02em;
+      }
+      .signup p {
+        margin: 0 0 24px;
+        color: var(--muted);
+      }
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .field.full {
+        grid-column: 1 / -1;
+      }
+      label {
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      input,
+      select {
+        background: #0e1118;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        border-radius: 10px;
+        padding: 12px 14px;
+        font-size: 0.95rem;
+      }
+      input:focus,
+      select:focus {
+        outline: 2px solid var(--brand);
+        outline-offset: 1px;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 28px 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      @media (max-width: 760px) {
+        .features {
+          grid-template-columns: 1fr;
+        }
+        form {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">Northwind</div>
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#start">Get started</a>
+        </nav>
+      </header>
+
+      <!-- Hero — the prime personalization target (headline, sub-headline, CTA) -->
+      <section class="hero">
+        <h1 id="headline">Dashboards that actually decide.</h1>
+        <h2 id="subheadline">
+          Northwind turns your raw numbers into clear next steps — so your team
+          stops guessing and starts shipping.
+        </h2>
+        <a class="cta" id="primary-cta" href="#start">Start free trial</a>
+        <a class="cta secondary" href="#features">See how it works</a>
+      </section>
+
+      <!-- Feature cards (text-bearing elements for the snapshot to capture) -->
+      <section class="features" id="features">
+        <div class="card">
+          <h3>Live metrics</h3>
+          <p>
+            Every number updates in real time, no manual refresh, no stale
+            exports.
+          </p>
+        </div>
+        <div class="card">
+          <h3>One source of truth</h3>
+          <p>
+            Connect your tools once; Northwind reconciles the rest
+            automatically.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Decisions, not charts</h3>
+          <p>
+            We surface the action to take, not just another graph to interpret.
+          </p>
+        </div>
+      </section>
+
+      <!-- A form — captured as field DEFINITIONS only (no values), good A.10 test -->
+      <section class="signup" id="start">
+        <h2>Start your 14-day free trial</h2>
+        <p>No setup fees. Cancel anytime.</p>
+        <form action="#" method="post" onsubmit="return false;">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Jane Doe"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="jane@company.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input
+              id="company"
+              name="company"
+              type="text"
+              placeholder="Acme Inc."
+            />
+          </div>
+          <div class="field">
+            <label for="size">Team size</label>
+            <select id="size" name="size">
+              <option>1–10</option>
+              <option>11–50</option>
+              <option>51–200</option>
+              <option>200+</option>
+            </select>
+          </div>
+          <div class="field full">
+            <button class="cta" type="submit">Create my account</button>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        © 2026 Northwind Analytics — local test page for the adfit snippet.
+      </footer>
+    </div>
+  </body>
+</html>
