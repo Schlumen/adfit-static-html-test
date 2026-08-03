@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Features - Northwind Analytics</title>
+    <meta
+      name="description"
+      content="Live metrics, one source of truth, and decisions instead of charts. See everything Northwind does for your team."
+    />
+    <meta property="og:title" content="Features - Northwind Analytics" />
+    <meta
+      property="og:description"
+      content="Live metrics, one source of truth, and decisions instead of charts."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://adfit-html-test.haendler.dev/og-image.png"
+    />
+
+    <!-- adfit snippet (Static HTML) - site adfit-html-test.haendler.dev, local dev host http://localhost:3000 -->
+    <link rel="preconnect" href="http://localhost:3000" crossorigin />
+    <script data-site="st_Zx0_SlCcP8siIAswgB-GoT4s3VlBHU1h" data-fooc-ms="800">"use strict";(()=>{function C(i){if(typeof i!="string")return!1;let t=i.trim();if(t.length===0||t.length>512||t.indexOf("{")!==-1||t.indexOf("}")!==-1||t.indexOf("<")!==-1||t.indexOf("@")!==-1||t.indexOf("/*")!==-1)return!1;for(let r=0;r<t.length;r++){let s=t.charCodeAt(r);if(s<32||s===127)return!1}return!0}var g="data-adfit-hiding",m="adfit-scoped-style",S="adfit-page-hide-style";function T(i){let t=[];for(let r=0;r<i.length;r++)C(i[r])&&t.indexOf(i[r])===-1&&t.push(i[r]);return t.length===0?null:t.join(",")+"{visibility:hidden!important}"}var k="adfit:";function L(i){return k+"cfg:"+i}(function(){"use strict";function i(){let n=document.currentScript;if(n&&n.getAttribute("data-site"))return n;let e=document.querySelectorAll("script[data-site]");return e.length>0?e[0]:null}let t=i();if(!t)return;let r=t.getAttribute("data-site");if(!r)return;function s(n){if(n==null||n==="")return 800;let e=typeof n=="number"?n:parseInt(n,10);return isFinite(e)?e<100?100:e>3e3?3e3:e:800}let H=s(t.getAttribute("data-fooc-ms"));function D(){try{return sessionStorage.getItem(L(r))}catch{return null}}function h(n,e){try{if(document.getElementById(n))return;let o=document.createElement("style");o.id=n,o.textContent=e,(document.head||document.documentElement).appendChild(o)}catch{}}function E(n){try{let e=document.getElementById(n);e&&e.parentNode&&e.parentNode.removeChild(e)}catch{}}function N(n){let e=[],o=null;try{let c=JSON.parse(n),u=c&&c.rules;if(Array.isArray(u))for(let l=0;l<u.length;l++){let f=u[l]&&u[l].changes;if(Array.isArray(f))for(let a=0;a<f.length;a++){let d=f[a]&&f[a].selector;typeof d=="string"&&d.length>0&&e.indexOf(d)===-1&&e.push(d)}}let O=c&&c.fooc&&c.fooc.timeoutMs;typeof O=="number"&&(o=s(O))}catch{}return{selectors:e,foocMs:o}}let y=!1;function _(){if(!y){y=!0;try{document.documentElement.removeAttribute(g)}catch{}E(S),E(m)}}function F(){h(S,"html["+g+"]{visibility:hidden!important}");try{document.documentElement.setAttribute(g,"1")}catch{}}let M=D(),p=M?N(M):{selectors:[],foocMs:null},x=p.selectors,R=p.foocMs!==null?p.foocMs:H,A=x.length>0?T(x):null;A?h(m,A):F();try{setTimeout(_,R)}catch{_()}})();})();</script>
+    <script
+      src="http://localhost:3000/s/st_Zx0_SlCcP8siIAswgB-GoT4s3VlBHU1h.js"
+      data-site="st_Zx0_SlCcP8siIAswgB-GoT4s3VlBHU1h"
+      data-fooc-ms="800"
+      data-cfasync="false"
+      data-no-defer="1"
+      data-no-optimize="1"
+      data-no-minify="1"
+      class="no-defer no-optimize"
+      async
+    ></script>
+    <!-- end adfit snippet -->
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo"><a href="index.html">Northwind</a></div>
+        <nav>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="index.html#start">Get started</a>
+        </nav>
+      </header>
+
+      <!-- Hero: the prime personalization target on this page. -->
+      <section class="hero">
+        <h1 id="headline">Everything you need to see clearly.</h1>
+        <h2 id="subheadline">
+          Northwind turns scattered data into one calm picture, so the whole team
+          reads the same numbers and acts on them the same day.
+        </h2>
+        <a class="cta" id="primary-cta" href="index.html#start"
+          >Start free trial</a
+        >
+        <a class="cta secondary" href="pricing.html">See pricing</a>
+      </section>
+
+      <!-- Feature cards (text-bearing elements for the snapshot to capture). -->
+      <section class="features">
+        <div class="card">
+          <h3>Live metrics</h3>
+          <p>Every number updates in real time. No manual refresh, no stale exports.</p>
+        </div>
+        <div class="card">
+          <h3>One source of truth</h3>
+          <p>Connect your tools once; Northwind reconciles the rest automatically.</p>
+        </div>
+        <div class="card">
+          <h3>Decisions, not charts</h3>
+          <p>We surface the action to take, not just another graph to interpret.</p>
+        </div>
+        <div class="card">
+          <h3>Smart alerts</h3>
+          <p>Get pinged when a metric breaks its expected range, before it hurts.</p>
+        </div>
+        <div class="card">
+          <h3>Integrations</h3>
+          <p>Warehouses, ad platforms, billing and product analytics in one place.</p>
+        </div>
+        <div class="card">
+          <h3>Enterprise security</h3>
+          <p>SSO, granular roles, and audit logs on every plan that needs them.</p>
+        </div>
+      </section>
+
+      <footer>
+        (c) 2026 Northwind Analytics - local test page for the adfit snippet.
+      </footer>
+    </div>
+  </body>
+</html>
