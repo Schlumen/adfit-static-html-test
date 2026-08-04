@@ -217,6 +217,15 @@
           grid-template-columns: 1fr;
         }
       }
+      .hero-img {
+        display: block;
+        max-width: 100%;
+        width: 720px;
+        height: auto;
+        margin: 40px auto 0;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+      }
     </style>
   </head>
 
@@ -241,6 +250,14 @@
         </h2>
         <a class="cta" id="primary-cta" href="#start">Start free trial</a>
         <a class="cta secondary" href="#features">See how it works</a>
+        <img
+          id="hero-image"
+          class="hero-img"
+          src="hero-default.png"
+          alt="Northwind analytics dashboard preview"
+          width="960"
+          height="480"
+        />
       </section>
 
       <!-- Feature cards (text-bearing elements for the snapshot to capture) -->
