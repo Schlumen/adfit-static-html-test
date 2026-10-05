@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressum | Muster GmbH</title>
+
+    <!-- adfit snippet (Static HTML) - site adfit-html-test.haendler.dev, STAGING Konto A via cdn-staging.adfit.io -->
+    <link rel="preconnect" href="https://cdn-staging.adfit.io" crossorigin>
+    <script data-site="st_1zjRHWN98YwbMpoe3hCuoq-hbzAdzmjE" data-fooc-ms="800">"use strict";(()=>{function h(e){if(typeof e!="string")return!1;let t=e.trim();if(t.length===0||t.length>512||t.indexOf("{")!==-1||t.indexOf("}")!==-1||t.indexOf("<")!==-1||t.indexOf("@")!==-1||t.indexOf("/*")!==-1)return!1;for(let i=0;i<t.length;i++){let s=t.charCodeAt(i);if(s<32||s===127)return!1}return!0}var c="data-adfit-hiding",g="adfit-scoped-style",p="adfit-page-hide-style";function x(e){let t=[];for(let i=0;i<e.length;i++)h(e[i])&&t.indexOf(e[i])===-1&&t.push(e[i]);return t.length===0?null:t.join(",")+"{visibility:hidden!important}"}var H="adfit:";function M(e){let t=e&&e.charAt(0)==="/"?e:"/"+(e||"");return t.length>1&&t.endsWith("/")&&(t=t.slice(0,-1)),t.endsWith("/index.html")?t=t.slice(0,-10):t.endsWith("/index.htm")&&(t=t.slice(0,-9)),t.length>1&&t.endsWith("/")&&(t=t.slice(0,-1)),t.length>2048&&(t=t.slice(0,2048)),t}function T(e,t){return H+"cfg:"+e+":"+t}(function(){"use strict";let e=document.currentScript,t=e&&e.getAttribute("data-site");if(t||(e=document.querySelector("script[data-site]"),t=e&&e.getAttribute("data-site")),!e||!t)return;function i(r){if(r==null||r==="")return 800;let n=typeof r=="number"?r:parseInt(r,10);return isFinite(n)?n<100?100:n>3e3?3e3:n:800}let s=i(e.getAttribute("data-fooc-ms"));function E(r,n){try{if(document.getElementById(r))return;let o=document.createElement("style");o.id=r,o.textContent=n,(document.head||document.documentElement).appendChild(o)}catch{}}function _(r){try{let n=document.getElementById(r);n&&n.parentNode&&n.parentNode.removeChild(n)}catch{}}let S=[],l=null;try{let r=JSON.parse(sessionStorage.getItem(T(t,M(location.pathname)))),n=r?.rules;if(Array.isArray(n))for(let u=0;u<n.length;u++){let f=n[u]?.changes;if(Array.isArray(f))for(let a=0;a<f.length;a++){let d=f[a]?.selector;typeof d=="string"&&d.length>0&&S.push(d)}}let o=r?.fooc?.timeoutMs;typeof o=="number"&&(l=i(o))}catch{}function C(){try{document.documentElement.removeAttribute(c)}catch{}_(p),_(g)}function N(){E(p,"html["+c+"]{visibility:hidden!important}");try{document.documentElement.setAttribute(c,"1")}catch{}}let I=l!==null?l:s,m=x(S);m?E(g,m):N(),setTimeout(C,I)})();})();
+</script>
+    <script src="https://cdn-staging.adfit.io/s/st_1zjRHWN98YwbMpoe3hCuoq-hbzAdzmjE.js"
+            data-site="st_1zjRHWN98YwbMpoe3hCuoq-hbzAdzmjE"
+            data-fooc-ms="800"
+            data-cfasync="false" data-no-defer="1" data-no-optimize="1"
+            data-no-minify="1" class="no-defer no-optimize" async></script>
+    <!-- end adfit snippet -->
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Impressum</h1>
+      <p>
+        Muster GmbH<br />
+        Musterstraße 1<br />
+        12345 Musterstadt
+      </p>
+      <p>Vertreten durch: Max Mustermann</p>
+      <p>E-Mail: <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Registergericht: Amtsgericht Musterstadt, HRB 00000</p>
+    </main>
+  </body>
+</html>
