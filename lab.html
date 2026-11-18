@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Talk to us - Northwind Analytics</title>
+    <meta
+      name="description"
+      content="Compare the Northwind Team and Agency plans and ask our team a question."
+    />
+
+    <!-- adfit snippet (Static HTML) - site adfit-html-test.haendler.dev, STAGING Konto A via cdn-staging.adfit.io -->
+    <link rel="preconnect" href="https://cdn-staging.adfit.io" crossorigin>
+    <script data-site="st_1zjRHWN98YwbMpoe3hCuoq-hbzAdzmjE" data-fooc-ms="800">"use strict";(()=>{function h(e){if(typeof e!="string")return!1;let t=e.trim();if(t.length===0||t.length>512||t.indexOf("{")!==-1||t.indexOf("}")!==-1||t.indexOf("<")!==-1||t.indexOf("@")!==-1||t.indexOf("/*")!==-1)return!1;for(let i=0;i<t.length;i++){let s=t.charCodeAt(i);if(s<32||s===127)return!1}return!0}var c="data-adfit-hiding",g="adfit-scoped-style",p="adfit-page-hide-style";function x(e){let t=[];for(let i=0;i<e.length;i++)h(e[i])&&t.indexOf(e[i])===-1&&t.push(e[i]);return t.length===0?null:t.join(",")+"{visibility:hidden!important}"}var H="adfit:";function M(e){let t=e&&e.charAt(0)==="/"?e:"/"+(e||"");return t.length>1&&t.endsWith("/")&&(t=t.slice(0,-1)),t.endsWith("/index.html")?t=t.slice(0,-10):t.endsWith("/index.htm")&&(t=t.slice(0,-9)),t.length>1&&t.endsWith("/")&&(t=t.slice(0,-1)),t.length>2048&&(t=t.slice(0,2048)),t}function T(e,t){return H+"cfg:"+e+":"+t}(function(){"use strict";let e=document.currentScript,t=e&&e.getAttribute("data-site");if(t||(e=document.querySelector("script[data-site]"),t=e&&e.getAttribute("data-site")),!e||!t)return;function i(r){if(r==null||r==="")return 800;let n=typeof r=="number"?r:parseInt(r,10);return isFinite(n)?n<100?100:n>3e3?3e3:n:800}let s=i(e.getAttribute("data-fooc-ms"));function E(r,n){try{if(document.getElementById(r))return;let o=document.createElement("style");o.id=r,o.textContent=n,(document.head||document.documentElement).appendChild(o)}catch{}}function _(r){try{let n=document.getElementById(r);n&&n.parentNode&&n.parentNode.removeChild(n)}catch{}}let S=[],l=null;try{let r=JSON.parse(sessionStorage.getItem(T(t,M(location.pathname)))),n=r?.rules;if(Array.isArray(n))for(let u=0;u<n.length;u++){let f=n[u]?.changes;if(Array.isArray(f))for(let a=0;a<f.length;a++){let d=f[a]?.selector;typeof d=="string"&&d.length>0&&S.push(d)}}let o=r?.fooc?.timeoutMs;typeof o=="number"&&(l=i(o))}catch{}function C(){try{document.documentElement.removeAttribute(c)}catch{}_(p),_(g)}function N(){E(p,"html["+c+"]{visibility:hidden!important}");try{document.documentElement.setAttribute(c,"1")}catch{}}let I=l!==null?l:s,m=x(S);m?E(g,m):N(),setTimeout(C,I)})();})();
+</script>
+    <script src="https://cdn-staging.adfit.io/s/st_1zjRHWN98YwbMpoe3hCuoq-hbzAdzmjE.js"
+            data-site="st_1zjRHWN98YwbMpoe3hCuoq-hbzAdzmjE"
+            data-fooc-ms="800"
+            data-cfasync="false" data-no-defer="1" data-no-optimize="1"
+            data-no-minify="1" class="no-defer no-optimize" async></script>
+    <!-- end adfit snippet -->
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--
+      Test fixture for adfit goals: elements and forms whose snapshot selector
+      is shared by two copies on this page (plan fix-hff-plan-nachtrag N4).
+
+      How it works: adfit builds a selector from the element and at most three
+      ancestors (four links). The two plan cards and the two form columns are
+      built the same way down to the fourth ancestor, so the link, the
+      "Book a demo" button and the form each get one selector that matches
+      both copies. Everything else on the page has its own selector.
+
+      Do not change the structure, the first class of any element in those
+      chains, or the order of siblings: that changes the measured selectors.
+      This page is reached by URL only. No other page links here.
+
+      Forms: they never leave the page (onsubmit returns false), fields have
+      no name attribute and no preset value (each field only has an id, so
+      its label can point to it), and the labels are neutral. Leave fields
+      empty or type "test" only.
+    -->
+    <style>
+      /* Layout for this page only, so styles.css stays untouched. */
+      .lab-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 8px 0 56px;
+      }
+      .lab-card-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      .lab-card-actions p {
+        margin: 0;
+      }
+      .lab-card-actions .cta.secondary {
+        margin-left: 0;
+      }
+      .lab-form-title {
+        margin: 0 0 12px;
+        font-size: 1.1rem;
+      }
+      .lab-form-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 24px;
+      }
+      .lab-form textarea {
+        background: #0e1118;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        border-radius: 10px;
+        padding: 12px 14px;
+        font-size: 0.95rem;
+        font-family: inherit;
+        min-height: 96px;
+        resize: vertical;
+      }
+      .lab-form textarea:focus {
+        outline: 2px solid var(--brand);
+        outline-offset: 1px;
+      }
+      .lab-form button:focus-visible,
+      .lab-card-actions .cta:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 2px;
+      }
+      @media (max-width: 760px) {
+        .lab-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo"><a href="index.html">Northwind</a></div>
+        <nav>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="index.html#start">Get started</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <h1>Pick the plan that fits how you work.</h1>
+        <h2>
+          Two ways to run Northwind. Compare them side by side, then book a demo
+          or ask us anything.
+        </h2>
+      </section>
+
+      <!-- Two plan cards, built the same way. The link and the button inside
+           share one selector across both cards. -->
+      <section class="lab-plans section">
+        <h2>Compare the plans</h2>
+        <p class="lead">
+          Not sure yet?
+          <a class="lab-single" href="features.html">See every feature first</a>.
+        </p>
+
+        <div class="lab-grid">
+          <div class="lab-card card">
+            <div class="lab-card-body">
+              <h3 class="lab-card-title">Team plan</h3>
+              <p class="lab-card-text">
+                For one team that wants weekly decisions instead of dashboards.
+              </p>
+              <div class="lab-card-actions">
+                <p class="lab-cta-row">
+                  <a class="lab-cta cta secondary" href="pricing.html"
+                    >See Team plan details</a
+                  >
+                </p>
+                <p class="lab-btn-row">
+                  <button class="lab-btn cta" type="button">Book a demo</button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab-card card">
+            <div class="lab-card-body">
+              <h3 class="lab-card-title">Agency plan</h3>
+              <p class="lab-card-text">
+                For agencies that run Northwind for several clients at once.
+              </p>
+              <div class="lab-card-actions">
+                <p class="lab-cta-row">
+                  <a class="lab-cta cta secondary" href="pricing.html"
+                    >See Agency plan details</a
+                  >
+                </p>
+                <p class="lab-btn-row">
+                  <button class="lab-btn cta" type="button">Book a demo</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Two contact forms, built the same way. The form element shares one
+           selector across both columns. Labels and the send button carry an
+           id each, so only the form itself is shared. -->
+      <section class="lab-contact section">
+        <h2>Ask our team</h2>
+        <p class="lead">Questions about a plan? Send us a short note.</p>
+
+        <div class="lab-grid">
+          <div class="lab-form-col">
+            <h3 class="lab-form-title">Questions about the Team plan</h3>
+            <div class="lab-form-card">
+              <div class="lab-form-frame">
+                <div class="lab-form-inner">
+                  <form class="lab-form" action="#" method="post" onsubmit="return false;" autocomplete="off">
+                    <div class="field full">
+                      <label id="lab-team-company-label" for="lab-team-company"
+                        >Company</label
+                      >
+                      <input
+                        id="lab-team-company"
+                        type="text"
+                        placeholder="Company"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="field full">
+                      <label id="lab-team-message-label" for="lab-team-message"
+                        >Message</label
+                      >
+                      <textarea
+                        id="lab-team-message"
+                        placeholder="Message"
+                        autocomplete="off"
+                      ></textarea>
+                    </div>
+                    <div class="field full">
+                      <button id="lab-team-send" class="cta" type="submit">
+                        Send question
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab-form-col">
+            <h3 class="lab-form-title">Questions about the Agency plan</h3>
+            <div class="lab-form-card">
+              <div class="lab-form-frame">
+                <div class="lab-form-inner">
+                  <form class="lab-form" action="#" method="post" onsubmit="return false;" autocomplete="off">
+                    <div class="field full">
+                      <label
+                        id="lab-agency-company-label"
+                        for="lab-agency-company"
+                        >Company</label
+                      >
+                      <input
+                        id="lab-agency-company"
+                        type="text"
+                        placeholder="Company"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="field full">
+                      <label
+                        id="lab-agency-message-label"
+                        for="lab-agency-message"
+                        >Message</label
+                      >
+                      <textarea
+                        id="lab-agency-message"
+                        placeholder="Message"
+                        autocomplete="off"
+                      ></textarea>
+                    </div>
+                    <div class="field full">
+                      <button id="lab-agency-send" class="cta" type="submit">
+                        Send question
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        (c) 2026 Northwind Analytics - local test page for the adfit snippet.
+      </footer>
+    </div>
+  </body>
+</html>
